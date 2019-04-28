@@ -3,7 +3,7 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.chomp
   input_to_index(input)
-
+  valid_move?(board, index)
 end
 
 
@@ -26,6 +26,7 @@ def move(board, index, boardCharacter = "X" )
 end
 
 def valid_move?(board, index)
+  
    if position_taken?(board, index) || !(index.between?(0,8))
      false
   else
