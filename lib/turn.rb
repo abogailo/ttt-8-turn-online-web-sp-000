@@ -4,7 +4,7 @@ def turn(board)
   input = gets.chomp
   input_to_index(input)
   if  valid_move?(board, input)
-     move(board, input, boardCharacter = "X")
+     puts"cool"
   else
     puts "Please enter 1-9:"
     input = gets.chomp
